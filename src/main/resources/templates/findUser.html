@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="shortcut icon" href="../resources/favicon.ico" th:href="@{/static/favicon.ico}"/>
+<head>
+    <title>北京尚学堂首页</title>
+</head>
+<body>
+<form th:action="@{/user/findUser}" method="post">
+    用户姓名:<input type="text" name="realname"><font color="red"> <span th:text="${error}"></span></font><br/>
+    <input type="submit" value="OK"/>
+</form>
+</body>
+</html>
